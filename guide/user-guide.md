@@ -5,8 +5,8 @@ status: maintained
 canonical: false
 source_repository: openglance/openglance
 source_path: docs/user-guide.md
-source_revision: c5365e2
-last_updated: 2026-08-15
+source_revision: 6f675a0
+last_updated: 2026-09-06
 ai_snippet: "[Guide] Try OpenGlance reading, editing cues, Mermaid, MDX-lite, Agent Context, Sync, and links in one public repository"
 ---
 
@@ -143,6 +143,10 @@ exercise.
 
 Automatic save writes the local file. Sync shows unpublished files and remote state. Publishing remains
 an explicit Git action; OpenGlance does not silently publish unfinished work or rewrite diverged history.
+
+Before publishing, optionally enter a **Change summary** in Sync. Leave it blank for a local description
+of changed files and any document changelog summaries added or edited in this change. Unchanged history
+is not reused. The [Agent Context and Sync](../demos/agent-context-and-sync.md) demo includes a draft exercise.
 
 The [Agent Context and Sync](../demos/agent-context-and-sync.md) demo includes a harmless edit you can
 make and then revert. After the edit:

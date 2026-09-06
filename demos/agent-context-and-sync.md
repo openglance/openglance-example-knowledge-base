@@ -4,8 +4,8 @@ type: feature-demo
 status: maintained
 source_repository: openglance/openglance
 source_path: docs/user-guide.md
-source_revision: c5365e2
-last_updated: 2026-08-15
+source_revision: 6f675a0
+last_updated: 2026-09-06
 ai_snippet: "[Demo] Select exact source-backed lines collect Agent Context locate document edits inspect local changes and publish deliberately"
 ---
 
@@ -52,6 +52,19 @@ An edit before the first visible navigation heading would use the synthetic **Do
 in-document cues are intentionally lighter than a standard Git diff and do not stage or discard files.
 
 Do not publish the practice edit unless you intentionally want to change the public demo.
+
+## Describe a publication
+
+Sync includes **Change summary (optional)** beside **Sync and publish**. Try entering
+`Clarify the Sync exercise`, switch between Preview and Live, and confirm that the draft remains.
+The first line becomes the commit title; additional lines become its body. A failed publication retains
+the draft, and a successful publication clears it. **Sync and copy** uses the same summary.
+
+Leaving the field blank generates a local description from change types and document titles. For an
+existing document with `change_log.summary`, only values added or edited in the pending change are used.
+Unchanged history, reordered entries, and date-only updates are not descriptions of the current edit.
+New documents use their title because embedded history may have been copied. No AI service is required.
+For this exercise, clear the draft and undo the practice edit when finished.
 
 ## Link handoff
 

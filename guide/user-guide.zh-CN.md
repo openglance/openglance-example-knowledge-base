@@ -5,8 +5,8 @@ status: maintained
 canonical: false
 source_repository: openglance/openglance
 source_path: docs/user-guide.zh-CN.md
-source_revision: c5365e2
-last_updated: 2026-08-15
+source_revision: 6f675a0
+last_updated: 2026-09-06
 ai_snippet: "[使用指南] 在一个公开仓库中体验 OpenGlance 阅读、文档改动提示、编辑、Mermaid、MDX-lite、Agent Context、Sync 与链接"
 ---
 
@@ -123,6 +123,10 @@ Timeline、Chart、DecisionBox、MetricGrid 和 FlowDiagram；在外部数据集
 
 自动保存只负责写入本地文件。Sync 显示尚未发布的文件和远端状态；发布始终是明确的 Git 操作。OpenGlance
 不会静默发布未完成内容，也不会自动重写已经分叉的历史。
+
+发布前可以在 Sync 中选填“本次修改摘要”。留空时，App 在本地根据改动文件及本次新增或修改的文档变更
+摘要生成说明，不会重复使用未变化的历史记录。[Agent Context 与 Sync](../demos/agent-context-and-sync.md)
+Demo 提供了摘要草稿练习。
 
 [Agent Context 与 Sync](../demos/agent-context-and-sync.md) Demo 提供了一个可以修改、随后撤销的
 无害练习。完成修改后：
