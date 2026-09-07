@@ -5,8 +5,8 @@ status: maintained
 canonical: false
 source_repository: openglance/openglance
 source_path: docs/user-guide.md
-source_revision: 6f675a0
-last_updated: 2026-09-06
+source_revision: edc221a
+last_updated: 2026-09-07
 ai_snippet: "[Guide] Try OpenGlance reading, editing cues, Mermaid, MDX-lite, Agent Context, Sync, and links in one public repository"
 ---
 
@@ -35,6 +35,11 @@ same saved reordering, and the visible number shortcuts update immediately. A ro
 from OpenGlance without deleting its local files. The worktree selector remains a separate control from the
 repository panel: when multiple worktrees exist, it replaces the repeated standalone repository name in
 the sidebar header while the repository button stays beside it.
+
+If a requested document is missing or unreadable, choose another file from the tree or switch
+repositories in the workbench. If the repository or worktree itself is unavailable, Home keeps
+**Opened repositories** visible so you can enter another saved repository without locating its folder
+again.
 
 ## 2. Read in Preview
 

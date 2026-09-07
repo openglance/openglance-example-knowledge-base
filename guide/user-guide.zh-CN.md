@@ -5,8 +5,8 @@ status: maintained
 canonical: false
 source_repository: openglance/openglance
 source_path: docs/user-guide.zh-CN.md
-source_revision: 6f675a0
-last_updated: 2026-09-06
+source_revision: edc221a
+last_updated: 2026-09-07
 ai_snippet: "[使用指南] 在一个公开仓库中体验 OpenGlance 阅读、文档改动提示、编辑、Mermaid、MDX-lite、Agent Context、Sync 与链接"
 ---
 
@@ -30,6 +30,9 @@ OpenGlance 直接打开已经存在于本机的 Git 仓库，不会上传仓库�
 `Ctrl+0` 会打开另一个本机仓库。拖动仓库行左侧手柄可以上下调整并保存顺序；手柄获得焦点时，也可以
 使用上下方向键，面板中的数字快捷键会立即重新编号。仓库行还可以从 OpenGlance 中移除，但不会删除本机文件；
 worktree 选择器仍与仓库面板相互独立：存在多个 worktree 时，它会取代侧栏头部重复的仓库名称，仓库按钮仍显示在右侧。
+
+请求的文档缺失或无法读取时，仍可从文件树打开其他文件，或在工作台中切换仓库。如果仓库或 worktree 本身
+已不可用，首页会保留“已打开的仓库”，点击仍可用的仓库即可进入，无需重新查找目录。
 
 ## 2. 在 Preview 中阅读
 
