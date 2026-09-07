@@ -5,7 +5,7 @@ status: maintained
 canonical: false
 source_repository: openglance/openglance
 source_path: docs/user-guide.md
-source_revision: edc221a
+source_revision: b7acd67
 last_updated: 2026-09-07
 ai_snippet: "[Guide] Try OpenGlance reading, editing cues, Mermaid, MDX-lite, Agent Context, Sync, and links in one public repository"
 ---
@@ -40,6 +40,10 @@ If a requested document is missing or unreadable, choose another file from the t
 repositories in the workbench. If the repository or worktree itself is unavailable, Home keeps
 **Opened repositories** visible so you can enter another saved repository without locating its folder
 again.
+
+An ordinary OpenGlance `/open` document link opens the primary checkout, even after you have used a
+linked worktree. A link with a worktree ID opens only that exact local worktree and reports an error if
+it has been removed. Opening `/open` reads local content without synchronizing the repository.
 
 ## 2. Read in Preview
 

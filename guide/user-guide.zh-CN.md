@@ -5,7 +5,7 @@ status: maintained
 canonical: false
 source_repository: openglance/openglance
 source_path: docs/user-guide.zh-CN.md
-source_revision: edc221a
+source_revision: b7acd67
 last_updated: 2026-09-07
 ai_snippet: "[使用指南] 在一个公开仓库中体验 OpenGlance 阅读、文档改动提示、编辑、Mermaid、MDX-lite、Agent Context、Sync 与链接"
 ---
@@ -33,6 +33,9 @@ worktree 选择器仍与仓库面板相互独立：存在多个 worktree 时，�
 
 请求的文档缺失或无法读取时，仍可从文件树打开其他文件，或在工作台中切换仓库。如果仓库或 worktree 本身
 已不可用，首页会保留“已打开的仓库”，点击仍可用的仓库即可进入，无需重新查找目录。
+
+普通 OpenGlance `/open` 文档链接会打开主工作目录，即使刚才使用过 linked worktree。带 worktree ID 的
+链接只打开那个准确的本机工作目录；目录已移除时会明确报错。打开 `/open` 只读取本机内容，不会同步仓库。
 
 ## 2. 在 Preview 中阅读
 
