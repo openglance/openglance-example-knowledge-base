@@ -5,8 +5,8 @@ status: maintained
 canonical: false
 source_repository: openglance/openglance
 source_path: docs/user-guide.md
-source_revision: b7acd67
-last_updated: 2026-09-07
+source_revision: b6bacf938838770faa072db5800b5463518b491e
+last_updated: 2026-09-13
 ai_snippet: "[Guide] Try OpenGlance reading, editing cues, Mermaid, MDX-lite, Agent Context, Sync, and links in one public repository"
 ---
 
@@ -25,6 +25,10 @@ copy of its documents. The directory tree, Git history, and source files remain 
 other Git tool.
 
 Use this repository for the tour so every visible document describes the product you are using.
+
+Within each directory, folders appear before files and names use natural ordering: `2` comes before
+`10`, and `chapter2.md` before `chapter10.md`. Folders beginning with `_` follow the other folders,
+still before files. Favorites retain their saved top-level order.
 
 When several repositories are open, use the repository button beside the current name or press
 `Command+O` on macOS and `Ctrl+O` on Windows. The centered panel can search the stable repository list;

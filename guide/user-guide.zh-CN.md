@@ -5,8 +5,8 @@ status: maintained
 canonical: false
 source_repository: openglance/openglance
 source_path: docs/user-guide.zh-CN.md
-source_revision: b7acd67
-last_updated: 2026-09-07
+source_revision: b6bacf938838770faa072db5800b5463518b491e
+last_updated: 2026-09-13
 ai_snippet: "[使用指南] 在一个公开仓库中体验 OpenGlance 阅读、文档改动提示、编辑、Mermaid、MDX-lite、Agent Context、Sync 与链接"
 ---
 
@@ -23,6 +23,9 @@ OpenGlance 直接打开已经存在于本机的 Git 仓库，不会上传仓库�
 仍然可以由其他 Git 工具、编辑器与 Agent 使用。
 
 本仓库里的内容直接介绍 OpenGlance，因此演示和截图中出现的文字也属于项目上下文。
+
+每层目录先显示文件夹，再显示文件；名称按自然顺序排列，例如 `2` 在 `10` 前、`chapter2.md` 在
+`chapter10.md` 前。以 `_` 开头的文件夹排在其他文件夹之后、文件之前。收藏列表顶层保留保存的顺序。
 
 打开多个仓库时，可以点击当前仓库名称旁的仓库按钮，或在 macOS 按 `Command+O`、在 Windows 按
 `Ctrl+O`。窗口中央的仓库面板可以搜索顺序稳定的仓库列表；面板打开期间，`Command+1` 至
