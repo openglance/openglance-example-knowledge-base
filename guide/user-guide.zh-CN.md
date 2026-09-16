@@ -5,8 +5,8 @@ status: maintained
 canonical: false
 source_repository: openglance/openglance
 source_path: docs/user-guide.zh-CN.md
-source_revision: b6bacf938838770faa072db5800b5463518b491e
-last_updated: 2026-09-13
+source_revision: b16eb70fb2e0d42142c96c0de751dbe4ecfd01a0
+last_updated: 2026-09-16
 ai_snippet: "[使用指南] 在一个公开仓库中体验 OpenGlance 阅读、文档改动提示、编辑、Mermaid、MDX-lite、Agent Context、Sync 与链接"
 ---
 
@@ -52,6 +52,10 @@ Preview 用于只读浏览渲染后的 Markdown 或 MDX。文档仍保留来源�
 2. 打开内部文档链接；
 3. 选择几行带来源的准确内容；
 4. 在 macOS 使用 Command-click、在 Windows 使用 Ctrl-click 打开第二个 Tab。
+
+打开[链接预览 Demo](../demos/link-previews.md)，体验本地文档摘要、章节和源文件行，以及通过本机当前
+`gh` 登录读取的 GitHub 内容。Preview 和 Live 都支持悬停卡片；移入卡片可以展开阅读或打开链接，
+按 `Escape` 关闭。
 
 ## 3. 在 Live 中做小范围修改
 

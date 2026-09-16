@@ -32,6 +32,7 @@ OpenGlance 是本地 Git 仓库面向人的界面。人可以在 OpenGlance 中�
 
 | Demo | 可以体验什么 |
 | --- | --- |
+| [链接预览](demos/link-previews.md) | 悬停阅读本地摘要、章节、源文件行，以及通过本机 gh 读取的 GitHub 内容 |
 | [Markdown 与 Live](demos/markdown-live.md) | Preview、目录、Source、Live、Frontmatter、链接、列表和任务 |
 | [Live 表格编辑](demos/live-table-editing.md) | 单元格编辑、矩形选区格式、文字高亮、列对齐与列移动 |
 | [图片编辑](demos/image-editing.md) | Markdown 图片与 Live 图片工具栏 |

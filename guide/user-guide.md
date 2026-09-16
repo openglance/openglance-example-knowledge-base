@@ -5,8 +5,8 @@ status: maintained
 canonical: false
 source_repository: openglance/openglance
 source_path: docs/user-guide.md
-source_revision: b6bacf938838770faa072db5800b5463518b491e
-last_updated: 2026-09-13
+source_revision: b16eb70fb2e0d42142c96c0de751dbe4ecfd01a0
+last_updated: 2026-09-16
 ai_snippet: "[Guide] Try OpenGlance reading, editing cues, Mermaid, MDX-lite, Agent Context, Sync, and links in one public repository"
 ---
 
@@ -62,6 +62,10 @@ Open [Markdown and Live](../demos/markdown-live.md), then try:
 2. following an internal document link;
 3. selecting exact source-backed lines;
 4. using Command-click on macOS or Ctrl-click on Windows to open a second tab.
+
+Open [Link previews](../demos/link-previews.md) to try local document summaries, section and source-line
+excerpts, and GitHub context through your current local `gh` login. Cards work in Preview and Live;
+move into the card to read more, choose **Open**, or press `Escape` to dismiss.
 
 ## 3. Make a focused change in Live
 
