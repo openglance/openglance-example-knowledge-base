@@ -5,7 +5,7 @@ status: maintained
 canonical: false
 source_repository: openglance/openglance
 source_path: docs/user-guide.md
-source_revision: 1937b003e72fedaae5e4a88d9d544764dcf428be
+source_revision: 37a114339ccc957fbdda908cf230972bbc053a9a
 last_updated: 2026-09-16
 description: Read local document excerpts and GitHub context before opening a link in OpenGlance.
 ---
@@ -30,6 +30,9 @@ The preview reads the local saved file. Hovering does not edit, synchronize, or 
 
 - [OpenGlance repository](https://github.com/openglance/openglance) shows repository information.
 - [OpenGlance README](https://github.com/openglance/openglance/blob/main/README.md) shows a file excerpt.
+- [OpenGlance user guide](https://github.com/openglance/openglance/blob/main/docs/user-guide.md) and
+  [architecture](https://github.com/openglance/openglance/blob/main/docs/architecture.md) let you try
+  different file previews over the same network connection.
 - [Latest OpenGlance release](https://github.com/openglance/openglance/releases/latest) shows release
   information when the repository has a published release.
 
@@ -42,7 +45,9 @@ This public demo does not contain private repository addresses or content.
 
 The card explains missing login, missing content, denied access, or connection errors. GitHub file line
 anchors are supported; other GitHub anchors show a labeled resource excerpt rather than comments or
-diffs. Requests reuse network connections, and successful previews stay in memory for up to 60 seconds.
+diffs. Different GitHub URLs reuse the same connection; file branch and tag lookups can run concurrently
+over HTTP/2. The first connection and each API read still take network time. Successful previews stay
+in memory for up to 60 seconds.
 Try hovering the same link again: it should appear faster. Switching the local `gh` login or logging out
 clears retained content; status and Milestone progress may be up to one minute old when a card opens.
 Content is not sent to an AI service or saved in a disk cache.
@@ -52,7 +57,8 @@ Content is not sent to an AI service or saved in a disk cache.
 在 Preview 或 Live 中，将鼠标停在上面的链接上；移入卡片可继续阅读、展开摘录或打开链接，按 `Esc`
 关闭。本地链接分别演示整篇摘要、单个章节和准确源文件行。GitHub 预览使用本机 `gh` 的当前登录权限；
 私有仓库可以使用自己的已授权链接体验，无需把私密内容加入这个公开 Demo。Milestone（里程碑）链接
-会展示描述、状态、截止日期和 Issue／PR 关闭进度；没有事项时显示空状态。GitHub 请求复用连接，成功
+会展示描述、状态、截止日期和 Issue／PR 关闭进度；没有事项时显示空状态。不同 GitHub 链接共用连接，
+支持 HTTP/2 时文件预览的分支和标签查询可并发执行；首次建连和每次 API 读取仍需要网络时间。成功
 预览在内存中保留最多 60 秒，再次悬停同一个链接会更快。切换 `gh` 登录或退出账号后清除旧内容；卡片
 打开时的状态和进度可能延迟最多一分钟，内容不会写入磁盘缓存。
 
