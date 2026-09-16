@@ -5,7 +5,7 @@ status: maintained
 canonical: false
 source_repository: openglance/openglance
 source_path: docs/user-guide.md
-source_revision: b16eb70fb2e0d42142c96c0de751dbe4ecfd01a0
+source_revision: cc7413d07cfb282adf3fde406f4a7d5e5da3f384
 last_updated: 2026-09-16
 description: Read local document excerpts and GitHub context before opening a link in OpenGlance.
 ---
@@ -34,7 +34,9 @@ The preview reads the local saved file. Hovering does not edit, synchronize, or 
   information when the repository has a published release.
 
 GitHub previews use the current local GitHub CLI (`gh`) login. If needed, install `gh` and run
-`gh auth login`. Issue, pull request, and commit links are also supported. Private repositories follow
+`gh auth login`. Issue, pull request, milestone, and commit links are also supported. Milestone cards
+show the description, open/closed state, due date, and closed/total Issue and PR counts. A milestone
+without any items shows an empty state rather than a completion percentage. Private repositories follow
 your account's existing permissions; use a link from your own authorized repository to try that path.
 This public demo does not contain private repository addresses or content.
 
@@ -46,6 +48,7 @@ diffs. Content is not sent to an AI service or saved in a persistent preview cac
 
 在 Preview 或 Live 中，将鼠标停在上面的链接上；移入卡片可继续阅读、展开摘录或打开链接，按 `Esc`
 关闭。本地链接分别演示整篇摘要、单个章节和准确源文件行。GitHub 预览使用本机 `gh` 的当前登录权限；
-私有仓库可以使用自己的已授权链接体验，无需把私密内容加入这个公开 Demo。
+私有仓库可以使用自己的已授权链接体验，无需把私密内容加入这个公开 Demo。Milestone（里程碑）链接
+会展示描述、状态、截止日期和 Issue／PR 关闭进度；没有事项时显示空状态。
 
 [Return to the guide](../guide/user-guide.md) · [返回中文指南](../guide/user-guide.zh-CN.md)
