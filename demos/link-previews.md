@@ -5,7 +5,7 @@ status: maintained
 canonical: false
 source_repository: openglance/openglance
 source_path: docs/user-guide.md
-source_revision: 37a114339ccc957fbdda908cf230972bbc053a9a
+source_revision: 5ccd8747f0667e4dd0fd836f26bb2a540d62fa93
 last_updated: 2026-09-16
 description: Read local document excerpts and GitHub context before opening a link in OpenGlance.
 ---
@@ -15,6 +15,9 @@ description: Read local document excerpts and GitHub context before opening a li
 In Preview or Live, pause over any supported link below. Move into its card to keep reading, expand the
 excerpt, or choose **Open**. Press `Escape` to close it. In Preview, focus a link with the keyboard and
 press `Alt+Down` to enter its card.
+
+The compact card puts its title and close button on the same row, followed by the path and excerpt.
+Milestone progress and other resource details remain visible where relevant.
 
 ## Local documents
 
@@ -55,7 +58,8 @@ Content is not sent to an AI service or saved in a disk cache.
 ## 中文操作提示
 
 在 Preview 或 Live 中，将鼠标停在上面的链接上；移入卡片可继续阅读、展开摘录或打开链接，按 `Esc`
-关闭。本地链接分别演示整篇摘要、单个章节和准确源文件行。GitHub 预览使用本机 `gh` 的当前登录权限；
+关闭。紧凑卡片将标题和关闭按钮放在同一行，下方展示路径、摘录及适用的里程碑进度等信息。
+本地链接分别演示整篇摘要、单个章节和准确源文件行。GitHub 预览使用本机 `gh` 的当前登录权限；
 私有仓库可以使用自己的已授权链接体验，无需把私密内容加入这个公开 Demo。Milestone（里程碑）链接
 会展示描述、状态、截止日期和 Issue／PR 关闭进度；没有事项时显示空状态。不同 GitHub 链接共用连接，
 支持 HTTP/2 时文件预览的分支和标签查询可并发执行；首次建连和每次 API 读取仍需要网络时间。成功
