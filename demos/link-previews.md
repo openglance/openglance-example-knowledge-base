@@ -5,8 +5,8 @@ status: maintained
 canonical: false
 source_repository: openglance/openglance
 source_path: docs/user-guide.md
-source_revision: 5ccd8747f0667e4dd0fd836f26bb2a540d62fa93
-last_updated: 2026-09-16
+source_revision: 15fa38e0ddd2ad4814d07faf7c3ba2ad394d6a90
+last_updated: 2026-09-19
 description: Read local document excerpts and GitHub context before opening a link in OpenGlance.
 ---
 
@@ -54,6 +54,22 @@ in memory for up to 60 seconds.
 Try hovering the same link again: it should appear faster. Switching the local `gh` login or logging out
 clears retained content; status and Milestone progress may be up to one minute old when a card opens.
 Content is not sent to an AI service or saved in a disk cache.
+
+## External previews in Codex and other clients
+
+Copy this [OpenGlance document link](https://gitleaf.mangofuture.com/open?repo=openglance%2Fopenglance-example-knowledge-base&path=demos%2Flink-previews.md&title=Link+preview+demo)
+into a preview-capable client. The hosted response supplies the document title, repository path,
+OpenGlance site name, and a small icon. The client decides which fields to show and how long to cache
+them; a hover card is not guaranteed in every application. No large cover image or document-body
+summary is sent. Clicking still opens the local document in OpenGlance.
+
+New links from the generator carry a title of up to 100 characters. Use `--no-preview-title` to omit a
+sensitive title. Older links without a title use the filename. Repository permissions do not hide
+metadata embedded in a URL from its recipients or preview services.
+
+在 Codex 等支持链接预览的客户端中，上面的 HTTPS 链接会提供文档标题、仓库路径、OpenGlance 来源和小图标。
+实际卡片显示和缓存由客户端决定。生成器默认携带最多 100 字符的标题，敏感标题可用
+`--no-preview-title` 省略；旧链接回退到文件名。正文和 AI 摘要不会传输，点击仍在本机 OpenGlance 中打开文档。
 
 ## 中文操作提示
 
