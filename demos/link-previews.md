@@ -5,8 +5,8 @@ status: maintained
 canonical: false
 source_repository: openglance/openglance
 source_path: docs/user-guide.md
-source_revision: 15fa38e0ddd2ad4814d07faf7c3ba2ad394d6a90
-last_updated: 2026-09-19
+source_revision: 4d7900332bd837c57b3a4dd5926137f6c1cdab2f
+last_updated: 2026-09-21
 description: Read local document excerpts and GitHub context before opening a link in OpenGlance.
 ---
 
@@ -63,13 +63,21 @@ OpenGlance site name, and a small icon. The client decides which fields to show 
 them; a hover card is not guaranteed in every application. No large cover image or document-body
 summary is sent. Clicking still opens the local document in OpenGlance.
 
-New links from the generator carry a title of up to 100 characters. Use `--no-preview-title` to omit a
-sensitive title. Older links without a title use the filename. Repository permissions do not hide
+New links carry a title of up to 100 characters only when it adds information beyond the filename.
+For example, `Weekly Report` is omitted for `weekly-report.md`, while `Project Handbook` is retained
+for `README.md`. Use `--no-preview-title` to omit all titles. Older links without a title use the filename. Repository permissions do not hide
 metadata embedded in a URL from its recipients or preview services.
 
+Descriptions identify the repository and location, plus a local-worktree or published-revision label
+when relevant. A filename already shown in the title is omitted from the description. All metadata is
+available in the initial HTML; it does not read local files or depend on page scripts running in the
+preview client. Read current local document content using OpenGlance’s in-app preview.
+
 在 Codex 等支持链接预览的客户端中，上面的 HTTPS 链接会提供文档标题、仓库路径、OpenGlance 来源和小图标。
-实际卡片显示和缓存由客户端决定。生成器默认携带最多 100 字符的标题，敏感标题可用
+实际卡片显示和缓存由客户端决定。生成器仅携带与文件名不同、能补充信息的标题（最多 100 字符），可用
 `--no-preview-title` 省略；旧链接回退到文件名。正文和 AI 摘要不会传输，点击仍在本机 OpenGlance 中打开文档。
+描述保留仓库、位置及必要的工作区或发布版本，省略标题已显示的文件名。元数据直接来自初始 HTML；
+外部预览不读取本机文件，也不依赖执行页面脚本。最新本地正文请在 OpenGlance 内预览。
 
 ## 中文操作提示
 
