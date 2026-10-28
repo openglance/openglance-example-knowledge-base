@@ -5,8 +5,8 @@ status: maintained
 canonical: false
 source_repository: openglance/openglance
 source_path: docs/user-guide.md
-source_revision: b16eb70fb2e0d42142c96c0de751dbe4ecfd01a0
-last_updated: 2026-09-16
+source_revision: 6ca5af004f7d934e703923c1e4bcc7b2bebccbdd
+last_updated: 2026-10-28
 ai_snippet: "[Guide] Try OpenGlance reading, editing cues, Mermaid, MDX-lite, Agent Context, Sync, and links in one public repository"
 ---
 
@@ -156,7 +156,11 @@ external agent.
 Open [Agent Context and Sync](../demos/agent-context-and-sync.md) and follow its bounded selection
 exercise.
 
-## 10. Inspect and publish changes deliberately
+## 10. Discuss a passage
+
+Open [Document comments](../demos/document-comments.md) in a build that includes the feature. Select text or source lines, create a thread, and reply in the right Comments panel. Resolve removes its body markers completely; the Resolved filter preserves its history and offers Reopen. Each action only saves local Markdown. Sync and publish remains manual. Source exposes the same records that Agents read and write. MDX comments are not supported yet.
+
+## 11. Inspect and publish changes deliberately
 
 Automatic save writes the local file. Sync shows unpublished files and remote state. Publishing remains
 an explicit Git action; OpenGlance does not silently publish unfinished work or rewrite diverged history.
@@ -180,7 +184,7 @@ make and then revert. After the edit:
 This is a document locator, not a full Git diff or staging interface. Revert the practice edit when the
 exercise is complete.
 
-## 11. Use the right boundary
+## 12. Use the right boundary
 
 OpenGlance is for reading, inspecting, and making focused edits to repository context. Use a full editor
 for broad code changes, a Git conflict tool for complex merges, and an external agent for larger

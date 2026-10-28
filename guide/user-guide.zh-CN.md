@@ -5,8 +5,8 @@ status: maintained
 canonical: false
 source_repository: openglance/openglance
 source_path: docs/user-guide.zh-CN.md
-source_revision: b16eb70fb2e0d42142c96c0de751dbe4ecfd01a0
-last_updated: 2026-09-16
+source_revision: 6ca5af004f7d934e703923c1e4bcc7b2bebccbdd
+last_updated: 2026-10-28
 ai_snippet: "[使用指南] 在一个公开仓库中体验 OpenGlance 阅读、文档改动提示、编辑、Mermaid、MDX-lite、Agent Context、Sync 与链接"
 ---
 
@@ -132,7 +132,11 @@ Timeline、Chart、DecisionBox、MetricGrid 和 FlowDiagram；在外部数据集
 
 打开 [Agent Context 与 Sync](../demos/agent-context-and-sync.md)，完成其中限定范围的选择练习。
 
-## 10. 有意识地检查和发布改动
+## 10. 围绕正文讨论
+
+在包含评论功能的构建中打开[文档评论示例](../demos/document-comments.md)。选择文字或源文件行号，通过右侧评论栏创建和回复。解决后正文标记完全消失，可以在「已解决」中查看历史和重新打开。每个动作只保存本地 Markdown，同步发布仍需手动操作。Source 展示 Agent 直接读写的同一份记录，当前尚不支持 MDX 评论。
+
+## 11. 有意识地检查和发布改动
 
 自动保存只负责写入本地文件。Sync 显示尚未发布的文件和远端状态；发布始终是明确的 Git 操作。OpenGlance
 不会静默发布未完成内容，也不会自动重写已经分叉的历史。
@@ -152,7 +156,7 @@ Demo 提供了摘要草稿练习。
 
 这是一项文档定位能力，不是完整 Git diff 或暂存界面。体验完成后，请撤销练习改动。
 
-## 11. 保持工具边界
+## 12. 保持工具边界
 
 OpenGlance 适合阅读、检查和小范围编辑仓库上下文。大范围代码修改应使用完整编辑器；复杂冲突使用 Git 合并
 工具；更大的仓库任务交给外部 Agent。

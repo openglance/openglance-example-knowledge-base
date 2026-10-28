@@ -35,6 +35,7 @@ If OpenGlance is already installed, use
 
 | Demo | What to try |
 | --- | --- |
+| [Document comments](demos/document-comments.md) | Create, reply, resolve with a clean body, reopen, and publish manually |
 | [Link previews](demos/link-previews.md) | Hover over local documents, sections, source lines, and GitHub links using the local gh login |
 | [Markdown and Live](demos/markdown-live.md) | Preview, outline, Source, Live, frontmatter, links, lists, and tasks |
 | [Live table editing](demos/live-table-editing.md) | Cell editing, rectangular formatting, text highlight, column alignment, and movement |
