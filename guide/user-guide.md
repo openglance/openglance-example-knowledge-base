@@ -5,7 +5,7 @@ status: maintained
 canonical: false
 source_repository: openglance/openglance
 source_path: docs/user-guide.md
-source_revision: 41d0aa9eea4d166549de942fd41139a71820fd28
+source_revision: 36b3d84fa3232e0944b3762527c3af802e950fb4
 last_updated: 2026-10-28
 ai_snippet: "[Guide] Try OpenGlance reading, editing cues, Mermaid, MDX-lite, Agent Context, Sync, and links in one public repository"
 ---
@@ -158,7 +158,7 @@ exercise.
 
 ## 10. Discuss a passage
 
-Open [Document comments](../demos/document-comments.md) in a build that includes the feature. Select text and use **Add comment** beside the selection, or select source lines. Create a thread and reply in the right Comments panel. Resolve removes its body markers completely; the Resolved filter preserves its history and offers Reopen. Each action only saves local Markdown. Sync and publish remains manual. Source exposes the same records that Agents read and write. MDX comments are not supported yet.
+Open [Document comments](../demos/document-comments.md) in a build that includes the feature. Select text and use **Add comment** beside the selection, or select source lines. Create a thread and reply in the right Comments panel. Open it with the speech-bubble icon after Copy share link; its tooltip shows the open-thread count. Resolve removes its body markers completely; the Resolved filter preserves its history and offers Reopen. Each action only saves local Markdown. Sync and publish remains manual. Source exposes the same records that Agents read and write. MDX comments are not supported yet.
 
 ## 11. Inspect and publish changes deliberately
 

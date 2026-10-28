@@ -4,7 +4,7 @@ type: feature-demo
 status: maintained
 source_repository: openglance/openglance
 source_path: docs/user-guide.md
-source_revision: 41d0aa9eea4d166549de942fd41139a71820fd28
+source_revision: 36b3d84fa3232e0944b3762527c3af802e950fb4
 last_updated: 2026-10-28
 ai_snippet: "[Demo] Create and reply to Git-backed document comments, resolve with a clean body, reopen, and publish manually"
 ---
@@ -21,7 +21,8 @@ Comments stay in the Markdown file. An agent can read the discussion without ope
 
 Drag to select part of the paragraph above, click **Add comment** beside the selection, check the quoted
 passage, and save locally. Keyboard selections in Live and Source show the same contextual action.
-Reply in the right Comments panel. Plain Preview paragraphs support exact text selection; complex
+Use the speech-bubble icon after **Copy share link** to open the right Comments panel.
+Reply there; **New comment** becomes available after selecting text or source lines. Plain Preview paragraphs support exact text selection; complex
 formatting explicitly falls back to a source-backed paragraph or line range. Live and Source use their
 editor selections. Agent Context remains available in the left sidebar.
 

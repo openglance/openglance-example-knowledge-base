@@ -5,7 +5,7 @@ status: maintained
 canonical: false
 source_repository: openglance/openglance
 source_path: docs/user-guide.zh-CN.md
-source_revision: 41d0aa9eea4d166549de942fd41139a71820fd28
+source_revision: 36b3d84fa3232e0944b3762527c3af802e950fb4
 last_updated: 2026-10-28
 ai_snippet: "[使用指南] 在一个公开仓库中体验 OpenGlance 阅读、文档改动提示、编辑、Mermaid、MDX-lite、Agent Context、Sync 与链接"
 ---
@@ -134,7 +134,7 @@ Timeline、Chart、DecisionBox、MetricGrid 和 FlowDiagram；在外部数据集
 
 ## 10. 围绕正文讨论
 
-在包含评论功能的构建中打开[文档评论示例](../demos/document-comments.md)。拖选文字后点击选区旁的「添加评论」，也可以先选择源文件行号，通过右侧评论栏创建和回复。解决后正文标记完全消失，可以在「已解决」中查看历史和重新打开。每个动作只保存本地 Markdown，同步发布仍需手动操作。Source 展示 Agent 直接读写的同一份记录，当前尚不支持 MDX 评论。
+在包含评论功能的构建中打开[文档评论示例](../demos/document-comments.md)。拖选文字后点击选区旁的「添加评论」，也可以先选择源文件行号，通过右侧评论栏创建和回复。顶部分享链接之后的气泡图标用于打开侧栏，悬浮提示显示未解决数量。解决后正文标记完全消失，可以在「已解决」中查看历史和重新打开。每个动作只保存本地 Markdown，同步发布仍需手动操作。Source 展示 Agent 直接读写的同一份记录，当前尚不支持 MDX 评论。
 
 ## 11. 有意识地检查和发布改动
 
